@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "clean": "node clean.js",
+    "path": "node script.js"
+  },
+  "devDependencies": {
+    "@im-bravo/posthtml-versioning-path": "^1.0.0",
+    "fs-extra": "^10.1.0",
+    "posthtml": "^0.16.6"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@im-bravo/posthtml-versioning-path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "PostHTML plugin for versioning path static assets",
   "author": "im-bravo (https://github.com/im-bravo)",
