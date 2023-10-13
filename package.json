@@ -1,6 +1,6 @@
 {
   "name": "posthtml-versioning-path",
-  "version": "1.2.2",
+  "version": "0.5.0",
   "license": "MIT",
   "description": "PostHTML plugin for versioning path static assets",
   "author": "Eric Liu (https://github.com/im-bravo)",
