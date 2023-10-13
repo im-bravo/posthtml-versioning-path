@@ -1,8 +1,6 @@
 import fs, { accessSync } from "fs";
 import path from "path";
 import type PostHTML from "posthtml";
-import hasha from "hasha";
-
 
 const DEFAULT_PATTERN = new RegExp(/\[versioning_path.*]/g);
 
