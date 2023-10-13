@@ -1,13 +1,13 @@
 {
-  "name": "posthtml-hash",
+  "name": "posthtml-versioning-path",
   "version": "1.2.2",
   "license": "MIT",
-  "description": "PostHTML plugin for hashing static assets",
-  "author": "Eric Liu (https://github.com/metonym)",
+  "description": "PostHTML plugin for versioning path static assets",
+  "author": "Eric Liu (https://github.com/im-bravo)",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest", 
     "prepack": "tsc"
   },
   "dependencies": {
@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/posthtml/posthtml-hash.git"
+    "url": "https://github.com/im-bravo/posthtml-versioning-path.git"
   },
-  "homepage": "https://github.com/posthtml/posthtml-hash",
-  "bugs": "https://github.com/posthtml/posthtml-hash/issues",
+  "homepage": "https://github.com/im-bravo/posthtml-versioning-path",
+  "bugs": "https://github.com/im-bravo/posthtml-versioning-path/issues",
   "keywords": [
     "posthtml",
     "posthtml plugin",
-    "hash",
+    "versioning",
     "asset",
     "cache"
   ],
