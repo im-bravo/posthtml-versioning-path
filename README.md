@@ -20,7 +20,7 @@
 ## Install
 ```bash
 # npm
-npm i -D posthtml-versioning-path
+npm i -D @im-bravo/posthtml-versioning-path
 ```
 
 ## Usage
