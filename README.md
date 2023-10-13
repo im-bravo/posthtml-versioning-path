@@ -2,7 +2,16 @@
 
 [![NPM][npm]][npm-url]
 
-`posthtml-versioning-path` is a [PostHTML](https://github.com/posthtml/posthtml) plugin for hashing file names to enable caching.
+`posthtml-versioning-path` is a [PostHTML](https://github.com/posthtml/posthtml) plugin for add versioned layer path to enable caching.
+The concept is similar to posthtml-hash.
+
+## Why versioned path layer instead of hash filename ?
+When deploying static content, when a new version of a resource is accessed using the same path, there is a certain probability of encountering a problem: the resource version referenced by the HTML file may be inconsistent with the actual resource version, which may cause the page to crash.
+It may be caused by cache (browser cache, proxy cache, or CDN cache), or sometimes it may be caused by the coexistence of old and new instances during the release process, such as replacement deployment based on docker.
+The filename hash is one of the good idea but there is still have some issue.
+But, to ensure no-inconsistency during deployment period, even if we use hash, it's better to use incremental-deployment. 
+In this case, we need consider the life cycle of each build and clean up old builds. for example keep only last 10 build version in the storage server.
+Inject build version in to path can be helpful for us to easily findout which build old we can delete. for example sort by version folder name and keep latest 10 build version.
 
 ```diff
 <html>
